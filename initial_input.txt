@@ -1,0 +1,31 @@
+central_schema = {
+    'title': 'string',
+    'authors': 'string',
+    'affiliation': 'string',
+    'date': 'date', (NOTE Format:YYYY-MM-DD eg. 2024-12-24 but datatype as string only)
+    'doi': 'string',
+    'publisher_organization': 'string',
+    'refcount': 'int', (NOTE the ref_count should be in string datatype)
+    'keywords': 'string',
+}
+Note: Working on Project research paper management system.
+The above is the schema according to which you have to extract the relevant fields and 
+their values from the subseqeunt queries i will give you later. For example if i later give you query like
+"Give me the research papers where the author is Mukesh Mohania" then in above query you have 
+to create a dictionary according to above schema(central_schema) like {"authors": "Mukesh Mohania"} likewise.
+You have to perform 2 tasks , first is to extract any such relevant structured input from my query and prepare 
+the dictionary as per schema.
+Second task is to provide my the subjective or unstructured resposne based upon the query.
+I will in my internal code use the dictionary given by you to search my database accordingly & then
+find the results specific to that.
+Therefore every output should be in format 
+Task 1:
+"YOUR RESPONSE CONTAINING dictionary IF YOU ARE ABLE TO FORM"
+"Stick to the schema stricly & extract values only from user query , do not insert values that are unknown or any dummy values like "to be determined""
+" DO NOT INSERT KEYS OR FIELDS WHICH ARE unknown "
+Task 2:
+"Subjective Response"
+Another example: "Give me details about author "Mukesh Mohania" in that case your subjective 
+answer should contain info about the author from your own knowledge or web based knowledge.
+Thanks!!
+
