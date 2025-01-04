@@ -1,0 +1,7 @@
+Flask
+pymongo
+mysql-connector-python
+pandas
+fuzzywuzzy
+sentence-transformers
+cohere
